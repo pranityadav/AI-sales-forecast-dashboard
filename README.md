@@ -18,13 +18,31 @@ This is a data analytics project built with **Python, pandas, numpy, scikit-lear
 
 ## 📁 Project Structure
 AI-sales-forecast-dashboard/
-├── app.py              # Streamlit dashboard
-├── requirements.txt    # Required Python packages
-├── README.md           # This file
-├── .gitignore          # Files to exclude from Git
-├── data/               # (Optional) Your dataset here
-└── screenshots/        # (Optional) Dashboard images
-
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+├── config/
+│   └── settings.py
+├── data/
+│   ├── sample_data.csv
+│   └── README.md
+├── src/
+│   ├── __init__.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── linear_model.py
+│   │   └── tree_models.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── data_processor.py
+│   │   └── visualizations.py
+│   └── pages/
+│       ├── __init__.py
+│       ├── home.py
+│       └── forecast.py
+└── tests/
+    └── test_models.py
 ---
 
 ## 🧠 Technologies Used
